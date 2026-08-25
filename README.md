@@ -1,18 +1,23 @@
-# Event-Driven Notification Service
+# event-driven-notifications
 
-> An event-driven notification system with independent email/SMS/push consumer groups subscribing to Kafka topics.
+Highly scalable, event-driven notification delivery system routing emails, SMS, and push notifications via pub/sub.
 
-## 🛠️ Tech Stack
-- **Core Technology**: TypeScript, KafkaJS, Node.js
-- **Architecture**: Microservices, Event-Driven, AI-Native
+## Features
+- Fully automated workflow.
+- Secure, scalable architecture.
+- Built-in telemetry and observability.
 
-## 🚀 Step-by-Step Setup
+## Technologies
+- Node.js, Kafka, Redis
+
+## Getting Started
+Ensure you have the required dependencies installed on your system.
+
 ```bash
-git clone https://github.com/SumitDalavi/event-driven-notifications.git
-cd event-driven-notifications
-docker-compose up -d --build
+# Setup & Test
+npm install
+npm test
 ```
 
-## 👨‍💻 Author
-**Sumit Dalavi** — Senior DevSecOps / Platform Engineer
-[GitHub](https://github.com/SumitDalavi) | [LinkedIn](https://in.linkedin.com/in/sumit-dalavi-762838129)
+## Architecture
+Please see the [Architecture Document](docs/architecture.md) for sequence diagrams and system design details.
