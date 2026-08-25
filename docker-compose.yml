@@ -1,6 +1,16 @@
 version: '3.8'
 services:
-  app:
+  api:
     build: .
     ports:
-      - '8080:8080'
+      - "3000:3000"
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+    depends_on:
+      - redis
+  
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
