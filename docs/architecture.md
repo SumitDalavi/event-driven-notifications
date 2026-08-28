@@ -5,15 +5,15 @@ The following Mermaid.js sequence diagram maps the core workflow and interaction
 
 ```mermaid
 sequenceDiagram
-    Microservice->>Kafka: Publish UserEvent
-Consumer->>Kafka: Read Event
-Consumer->>Redis: Check User Preferences
+    Microservice->>Embedded Event Emitter / Batching Queue: Publish UserEvent
+Consumer->>Embedded Event Emitter / Batching Queue: Read Event
+Consumer->>In-Memory LRU Cache / Node.js Maps: Check User Preferences
 Consumer->>Provider: Send Email/SMS
 Provider-->>Consumer: Success/Fail
 ```
 
 ## Component Breakdown
-- **Core Technology**: Node.js, Kafka, Redis
+- **Core Technology**: Node.js, Embedded Event Emitter / Batching Queue, In-Memory LRU Cache / Node.js Maps
 - **Design Paradigm**: Emphasizes high availability, fault tolerance, and security boundaries.
 
 ## Security & Scaling Considerations
