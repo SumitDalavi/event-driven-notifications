@@ -1,3 +1,6 @@
+> **NOTE:** This repository is an archival lab or partial prototype. It is not actively maintained and should not be used as a reference for production-grade deployments or performance benchmarks.
+
+
 # event-driven-notifications
 
 Highly scalable, event-driven notification delivery system routing emails, SMS, and push notifications via pub/sub.
@@ -47,6 +50,7 @@ npm run test
 ## 4. Constraints & Threat Model (Audit Added)
 
 ### Known Limitations
+- **State Management**: Uses in-memory mocked event buses and preference state.
 - **Single-Node Design:** This prototype uses embedded databases to simplify the infrastructure footprint for verification. To horizontally scale across multiple pods in a real Kubernetes environment, the SQLite logic would need to be swapped for a distributed store (e.g., PostgreSQL, Redis).
 - **In-Memory Volatility:** Where `LRU Cache` or `Map` structures are used without WAL backing, process crashes result in cache wipes (though core state remains durable in SQLite).
 
