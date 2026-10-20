@@ -1,14 +1,14 @@
 > **NOTE:** This repository is an archival lab or partial prototype. It is not actively maintained and should not be used as a reference for production-grade deployments or performance benchmarks.
 
-
 # event-driven-notifications
 
-[![Release](https://img.shields.io/github/v/release/SumitDalavi/event-driven-notifications?color=blue&logo=github)](https://github.com/SumitDalavi/event-driven-notifications/releases)
+[![CI Pipeline](https://github.com/SumitDalavi/event-driven-notifications/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/SumitDalavi/event-driven-notifications/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/SumitDalavi/event-driven-notifications?color=0969da&label=release&logo=github)](https://github.com/SumitDalavi/event-driven-notifications/releases)
 [![Release Workflow](https://github.com/SumitDalavi/event-driven-notifications/actions/workflows/release.yml/badge.svg)](https://github.com/SumitDalavi/event-driven-notifications/actions/workflows/release.yml)
-[![SBOM](https://img.shields.io/badge/SBOM-SPDX%20JSON-blueviolet?logo=spdx)](https://github.com/SumitDalavi/event-driven-notifications/releases)
-
-[![Release](https://img.shields.io/github/v/release/SumitDalavi/event-driven-notifications?color=blue&logo=github)](https://github.com/SumitDalavi/event-driven-notifications/releases)
-[![SBOM](https://img.shields.io/badge/SBOM-SPDX%20JSON-blueviolet?logo=spdx)](https://github.com/SumitDalavi/event-driven-notifications/releases)
+[![GHCR Container](https://img.shields.io/badge/ghcr.io-v0.2.0-blue?logo=docker&logoColor=white)](https://github.com/SumitDalavi/event-driven-notifications/pkgs/container/event-driven-notifications)
+[![Node.js](https://img.shields.io/badge/Node.js-20+-339933?logo=nodedotjs&logoColor=white)](https://nodejs.org)
+[![SBOM](https://img.shields.io/badge/SBOM-SPDX%202.3-blueviolet?logo=spdx)](https://github.com/SumitDalavi/event-driven-notifications/releases/tag/v0.2.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 Highly scalable, event-driven notification delivery system routing emails, SMS, and push notifications via pub/sub.
 
@@ -31,7 +31,6 @@ npm test
 
 ## Architecture
 Please see the [Architecture Document](docs/architecture.md) for sequence diagrams and system design details.
-
 
 ---
 
